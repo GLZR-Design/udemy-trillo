@@ -1,0 +1,112 @@
+:root {
+  --primary: #eb2f64;
+  --primary-light: #FF3366;
+  --primary-dark: #BA265D;
+  --white: #fff;
+  --grey-100: #faf9f9;
+  --grey-200: #f4f2f2;
+  --grey-300: #f0eeee;
+  --grey-400: #ccc;
+  --grey-600: #999;
+  --grey-700: #777;
+  --grey-900: #333;
+  --black: #111;
+  --box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+body {
+  background-image: linear-gradient(to right bottom, var(--primary-light), var(--primary-dark));
+  background-repeat: no-repeat;
+  color: var(--grey-700);
+  min-height: 100vh; }
+
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem; }
+
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--grey-100);
+  box-shadow: var(--box-shadow-lg);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: 1px solid var(--grey-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem; }
+
+.sidebar {
+  background-color: var(--grey-900);
+  flex: 0 0 20%; }
+
+.content {
+  display: flex; }
+
+/* CSS Document */
+.hotel-view {
+  background-color: var(--white);
+  flex: 1; }
+
+/* CSS Document */
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--grey-200);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.25rem; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--grey-300); }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: var(--grey-400); }
+  .search__button {
+    border: none;
+    background-color: transparent;
+    transition: all .1s; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--grey-700); }
+
+.user-nav__icon {
+  height: 2.25rem;
+  width: 2.25rem; }
+.user-nav__user-photo {
+  height: 3.75rem;
+  border-radius: 50%; }

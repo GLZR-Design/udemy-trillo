@@ -1,0 +1,45 @@
+// COLORS 
+
+$primary: #eb2f64;
+$primary-light: #FF3366;
+$primary-dark: #BA265D;
+
+$grey-100: #faf9f9;
+$grey-200: #f4f2f2;
+$grey-300: #f0eeee;
+$grey-400: #ccc;
+$grey-600: #333;
+$grey-700: #777;
+$grey-999: #999;
+
+// BOX SHADOWS 
+
+$box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3);
+
+// DEFINING CSS PROPERTIES
+
+:root {
+
+// COLORS    
+    
+--primary: #eb2f64;
+--primary-light: #FF3366;
+--primary-dark: #BA265D;
+
+--white: #fff;    
+--grey-100: #faf9f9;
+--grey-200: #f4f2f2;
+--grey-300: #f0eeee;
+--grey-400: #ccc;
+--grey-600: #999;
+--grey-700: #777;
+--grey-900: #333;
+--black: #111;
+
+
+    
+// SHADOWS    
+    
+--box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3);    
+    
+}
