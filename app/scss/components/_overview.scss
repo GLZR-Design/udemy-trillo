@@ -1,0 +1,75 @@
+.overview {
+    
+    display: flex;
+    border-bottom: 1px solid var(--grey-200);
+    align-items: center;
+    
+    &__heading {
+        
+        font-size: 2.25rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 1.5rem 3rem;
+        
+    }
+    
+    &__stars {
+
+        margin-right: auto;
+        display: flex;
+    
+     }
+    
+    &__icon-star, &__icon-location {
+        
+        width: 1.75rem;
+        height: 1.75rem; 
+        fill: var(--primary);
+        
+    }
+
+    &__icon-location {
+        
+        margin-right: 0.5rem;
+        
+    }
+    
+    &__location {
+    
+        font-size: 1.2rem;
+        display: flex;
+        align-content: center;
+    
+    }
+    
+    &__rating {
+        
+        background-color: var(--primary);
+        color: var(--white);
+        margin-left: 3rem;
+        padding: 0 2.25rem;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    &__rating-average {
+        
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -.5rem;
+        
+    }
+    
+    &__rating-count {
+        
+        font-size: .8rem;
+        text-transform: uppercase;
+        
+    }
+        
+}

@@ -1,0 +1,126 @@
+.btn-inline {
+    
+    border: none;
+    font-size: inherit;
+    color: var(--primary);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    display: inline-block;
+    background-color: transparent;
+    transition: all .2s;
+    
+    & span {
+        
+        margin-left: 2px;
+        transition: margin-left .2s;
+        
+    }
+    
+    &:hover {
+        
+        color: var(--grey-900);
+        cursor: pointer;
+        
+        span {
+            
+            margin-left: 8px;
+                        
+        }
+        
+    }
+    
+    &:focus {
+        
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+    
+    
+}
+
+.btn {
+    
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: 100px;
+    border: none;
+    background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+    color: var(--white);
+    overflow: hidden;
+    cursor: pointer;
+    
+    & > * {
+        
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .3s;
+    }
+    
+    &__visible {
+        
+        padding: 2rem 7.5rem;
+        
+    }
+    
+    &__invisible {
+        
+        position: absolute;
+        padding: 2rem;
+        left: 0;
+        top: -100%;
+        
+    }
+    
+    &:hover {
+        
+    background-image: linear-gradient(to right, var(--primary-dark), var(--primary-light));        
+        
+    }
+    
+    &:hover &__visible {
+            
+        transform: translateY(100%);
+        
+    }
+    
+    &:hover &__invisible {
+            
+        top: 0;
+    
+    }
+    
+    &:focus {
+        
+        outline: none;
+        animation: pulsate 1s infinite;
+        
+    }
+    
+}
+
+@keyframes pulsate {
+    
+    0% {
+       
+        transform: scale(1);
+        box-shadow: none;
+        
+    }
+    
+    50% {
+        
+        transform: scale(1.025);
+        box-shadow: var(--box-shadow-md);
+        
+    }
+    
+    100% {
+        
+        transform: scale(1);
+        box-shadow: none;
+        
+    }
+}

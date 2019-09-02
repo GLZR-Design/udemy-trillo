@@ -1,0 +1,17 @@
+.cta {
+    
+    padding: 3.5rem 0;
+    text-align: center;
+    
+    &__book-now {
+        
+        font-size: 1.7rem;
+        color: var(--grey-700);
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        
+    }
+    
+}

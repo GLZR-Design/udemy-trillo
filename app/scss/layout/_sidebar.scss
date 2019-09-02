@@ -2,5 +2,92 @@
         
     background-color: var(--grey-900);
     flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    .side-nav {
+        
+        font-size: $font-size-sm;
+        list-style: none;
+        margin-top: 3.5rem;
+        
+
+        &__item {
+            
+            position: relative;
+                        
+            &:not(:last-child) {
+                
+                margin-bottom: .5rem;
+                
+            }
+            
+        }
+    
+        &__item::before {
+            
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: var(--primary);
+            transform: scaleY(0);
+            transition: transform .2s ease, 
+                        width .3s cubic-bezier(1,0,0,1) .2s,
+                        background-color .1s;
+            
+        }
+        
+        &__item:hover::before,
+        &__item--active::before {
+            
+            transform: scaleY(1);
+            width: 100%;
+            
+        }
+        
+        &__item:active::before {
+            
+            background-color: var(--primary-light);
+            
+        }
+                
+        &__link:visited, &__link:link {
+                                
+            position: relative;
+            color: var(--grey-100);
+            text-decoration: none;
+            text-transform: uppercase;
+            display: flex;
+            padding: 1.5rem 3rem;
+            align-items: center;
+            z-index: 100;
+
+        }
+        
+                
+        &__icon {
+            
+            width: 1.75rem; 
+            height: 1.75rem;
+            margin-right: 2rem;
+            fill: currentColor;
+            
+        }
+        
+        
+    }
+    
+    .legal {
+        
+        font-size: 1.2rem;
+        color: var(--grey-400);
+        text-align: center;
+        padding: 2.5rem;
+        
+    }
     
 }

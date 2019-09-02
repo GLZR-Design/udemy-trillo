@@ -16,6 +16,7 @@ $grey-999: #999;
 
 $box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3);
 
+
 // DEFINING CSS PROPERTIES
 
 :root {
@@ -37,9 +38,26 @@ $box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3);
 --black: #111;
 
 
-    
 // SHADOWS    
     
+--box-shadow-md: 0 1rem 1.5rem rgba(0,0,0,.05);    
 --box-shadow-lg: 0 2rem 5rem rgba(0,0,0,.3);    
+
+// BORDERS
+    
+--border-light: 1px solid var(--grey-200);
+
+// SPACING
+    
+--gutter-width: 4.5rem;
     
 }
+
+// FONT-SIZES
+
+$font-size-sm: 1.4rem;
+$font-size-base: 1.18rem;
+
+// SPACING 
+    
+$gutter-width: 4.5rem;

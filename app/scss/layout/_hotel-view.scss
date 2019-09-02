@@ -6,3 +6,71 @@
     flex: 1;
     
 }
+
+.detail {
+    
+    display: flex;
+    padding: var(--gutter-width);
+    background-color: var(--grey-100);
+    border-bottom: var(--border-light);
+    font-size: 1.4rem;
+    
+}
+
+.description {
+    
+    font-size: inherit;
+    background-color: var(--white);
+    flex: 0 0 60%;
+    padding: 3rem;
+    margin-right: var(--gutter-width);
+    box-shadow: var(--box-shadow-md);
+    
+}
+
+.user-reviews {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0;    
+    
+}
+
+.recommend {
+    
+    font-size: 1.3rem;
+    color: var(--grey-600);
+    display: flex;
+    align-items: center;
+    
+    &__count {
+       
+        flex: 0 0 60%;
+        margin-right: auto;
+        
+        span {
+            
+            color: var(--primary);
+                        
+        }
+        
+    }
+            
+    &__photo {
+        
+        box-sizing: content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 2px solid var(--white);
+        
+        &:not(:last-child) {
+            
+            margin-right: -1.7rem;
+            
+        }
+        
+    }
+    
+}
